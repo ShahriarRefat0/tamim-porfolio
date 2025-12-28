@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.city-bg-overlay {
+  background-image: linear-gradient(rgba(20, 141, 163, 0.4), rgba(20, 141, 163, 0.5)), url("https://images.squarespace-cdn.com/content/v1/61d34d623b01842d5e566048/c7fdd58a-50a4-4073-a0b2-448b44c7fe87/WEbsitheader.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.faded-city-bg {
+  position: relative;
+}
+
+.faded-city-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCS79_RomEneN4PeVyi7dLxOXMwI9YV4AVx-sasItIaUgR3M5w3QCcbD5dnEu-vo-WIjwR52wOxT3DHcm8IIq6jMWt4pac7CPfuXm0paYNyPSjohiDhVCuxAJB0l6232C302snCv_xjze4ZgSzqW8hK97Kf8yjB21N2_BT1Kp5ovjXG0ubZpoiYJFTU2Gtizfmr18VLR0gTtMosf7NqQ3LStxDbArjJOG8TNFZyYdqdDmPx7dldfXgONiDx2cwyxB8kK9rSNWE0l7FE);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.dark .faded-city-bg::before {
+  opacity: 0.2;
+  filter: grayscale(100%);
+}
+
+.mask-image-gradient {
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}

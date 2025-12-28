@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>David Choi - CEO, Investor &amp; Host</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#148DA3", // Teal-ish blue from the screenshot
+            "primary-dark": "#0F6B7C",
+            "background-light": "#F9FAFB",
+            "background-dark": "#111827",
+            "surface-light": "#FFFFFF",
+            "surface-dark": "#1F2937",
+          },
+          fontFamily: {
+            display: ["Montserrat", "sans-serif"],
+            body: ["Open Sans", "sans-serif"],
+          },
+          backgroundImage: {
+            'city-pattern': "url('https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=2070&auto=format&fit=crop')",
+          }
+        },
+      },
+    };
+  </script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Open+Sans:wght@400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    .city-bg-overlay {
+      background-image: linear-gradient(rgba(20, 141, 163, 0.85), rgba(20, 141, 163, 0.9)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuCcjLO-vp9qSWjseeDVD5iSHz2-FEZRA0qMV1S40NQTy3FDbWrTTvH5j3I8CG3i_6Cd3whqoc8TYIAKQf3Clz7HXNwIEYF8XgDNzkUxSjN2MEdQXN1W7-G-6cvJhkZKnyHD5sM8rUfz9fFI11D1I3an7hbRr8mNTmryTXeH9e2E-L1e5gpGLEr_V_15P0b3PcvFnphYDP-e01jIHvAeyly0ba8mt37C4d3-CTFE0bAI9FsbG-f5WmYaHiqWPVK7Y7BVyJYY3lb6kUOL);
+      background-size: cover;
+      background-position: center
+    }
+
+    .faded-city-bg {
+      position: relative
+    }
+
+    .faded-city-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCS79_RomEneN4PeVyi7dLxOXMwI9YV4AVx-sasItIaUgR3M5w3QCcbD5dnEu-vo-WIjwR52wOxT3DHcm8IIq6jMWt4pac7CPfuXm0paYNyPSjohiDhVCuxAJB0l6232C302snCv_xjze4ZgSzqW8hK97Kf8yjB21N2_BT1Kp5ovjXG0ubZpoiYJFTU2Gtizfmr18VLR0gTtMosf7NqQ3LStxDbArjJOG8TNFZyYdqdDmPx7dldfXgONiDx2cwyxB8kK9rSNWE0l7FE);
+      background-size: cover;
+      background-position: center;
+      opacity: 0.05;
+      pointer-events: none;
+      z-index: 0
+    }
+
+    .dark .faded-city-bg::before {
+      opacity: 0.1;
+      filter: grayscale(100%)
+    }
+  </style>
+</head>
+
+<body class="font-body text-gray-800 dark:text-gray-200 bg-background-light dark:bg-background-dark">
+  <nav class="sticky top-0 z-50 bg-primary text-white shadow-md">
+    <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="font-display font-bold text-lg tracking-wider uppercase">
+        David Choi
+      </div>
+      <div class="hidden md:flex space-x-8 items-center">
+        <a class="font-display text-sm font-semibold tracking-wide border-b-2 border-transparent hover:border-white transition-colors uppercase"
+          href="#">Menu</a>
+      </div>
+      <div class="flex items-center space-x-6">
+        <div class="hidden md:flex space-x-4">
+          <a class="hover:text-gray-200 transition" href="#"><i class="fab fa-youtube"></i></a>
+          <a class="hover:text-gray-200 transition" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="hover:text-gray-200 transition" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="hover:text-gray-200 transition" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="hover:text-gray-200 transition" href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <a class="hidden lg:inline-block text-xs font-bold uppercase tracking-wider bg-black/20 hover:bg-black/30 px-4 py-2 rounded transition"
+          href="#">
+          Be Mentored by David
+        </a>
+        <button class="md:hidden text-white focus:outline-none">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <header
+    class="relative city-bg-overlay h-[60vh] md:h-[500px] flex flex-col justify-center items-center text-white text-center px-4">
+    <div class="relative z-10">
+      <h1 class="font-display font-extrabold text-5xl md:text-7xl mb-2 tracking-tight">DAVID CHOI</h1>
+      <p class="font-display font-semibold text-lg md:text-xl tracking-widest uppercase opacity-90">CEO, Investor, &amp;
+        Host</p>
+    </div>
+  </header>
+  <section class="relative py-20 faded-city-bg">
+    <div class="relative z-10 container mx-auto px-4 max-w-4xl flex flex-col items-center text-center">
+      <div
+        class="w-48 h-48 md:w-56 md:h-56 rounded-full border-4 border-primary overflow-hidden shadow-xl mb-10 -mt-32 md:-mt-40 bg-white relative">
+        <img alt="David Choi Portrait" class="w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEIFzWb0kUAR83x3_UbPkPOWPApgPA2uwCNd3TLd9ab54K5fnXmwazDVkFVAdd47OE8skIC48ixglQvxsnzudYrU9KJwD6PSrvWhEXYyKNVWdLw7FRVViJmv20UfNC39GXVXz69eJg_zJ62u-u2Cz960CFo17uR7pWi62JR_dNRAk1zMfpfCpYRzo0tXmebDBOb8IHmMBP3vDtHIwKhRgZM6KdUoadt3hTT7PvVDBmZkS601zDzvLsj_xJRvNeSIGop23lq2-ctR7i" />
+      </div>
+      <h2 class="font-display font-bold text-2xl md:text-3xl text-gray-900 dark:text-white mb-8 leading-snug">
+        Hi, I’m David Choi. I’m a real estate investor with over <br class="hidden md:block" /> $60,000,000 in AUM, and
+        I’m here to help you scale <br class="hidden md:block" /> your business to 8 Figures.
+      </h2>
+      <div
+        class="prose prose-lg dark:prose-invert text-gray-600 dark:text-gray-300 max-w-3xl space-y-6 mb-16 text-sm md:text-base leading-relaxed">
+        <p>
+          David Choi is a real estate investor, entrepreneur, and private equity fund manager. Over the last decade,
+          David has been a key member in acquiring, financing, and managing over $4 Billion AUM. As the CEO and Founder
+          of Leverage Companies and various subsidiaries, David currently owns over $60MM in assets and is on pace to
+          deploy over $800MM in both debt and equity into the SFR and small to mid-cap multifamily space in 2025.
+        </p>
+        <p>
+          In his spare time David has founded Leverage Cares, a philanthropic company focused on bringing financial
+          literacy to the city of Newark. He also teaches Real Estate Finance as an adjunct professor at Rutgers
+          Business School.
+        </p>
+        <p>
+          David graduated Cum Laude from Rutgers Business School with a degree in Finance with a concentration in Real
+          Estate.
+        </p>
+      </div>
+      <div class="relative group cursor-pointer mb-8">
+        <div class="relative overflow-hidden rounded-lg shadow-2xl max-w-lg mx-auto">
+          <img alt="Real Estate Software"
+            class="w-full h-auto object-cover opacity-90 hover:scale-105 transition duration-500"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq-_TavUBqHPq4WnOEwea-4qezirh1CmkuQb3pt89l61uCdhlT6zhd1MEaJ24SDwV9WNHBXR8KEDHgCL1QRKTEMEB9BxqXvOHop24nTaqu-JWPGidui6zxiUq8JeeKUc7oLPzMXgFTZFOpEUsXhtC-Tu-CG4n_6AqywukW3IX-Vu2Fc8uWQxYfu-lHEoAMePMpBItJO0_IZtVwXah2rOVC16f58X6sz9fHt4YYvKvVQEekIDMAtSwlU7vsuJReanfJ3QgkofPDE7rS" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 text-left">
+            <span class="text-white text-xs font-bold tracking-wider uppercase mb-1 opacity-80">David Choi's</span>
+            <h3 class="text-white font-display font-extrabold text-3xl leading-none uppercase">Real Estate<br />Software
+            </h3>
+          </div>
+          <img alt="David Laughing"
+            class="absolute bottom-0 right-0 w-1/3 h-auto object-cover object-top mask-image-gradient"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFcka96wcewwl3AYJozwMiCrDxhSRePksu227CIZxfWXX3RfXfhh_xVhuF8pKx6ZkuT98mS2s2-AUNVuBHj1VRmJGbUTIFNVzvhjs1g6dthmp7Vpn57zM_moEDZpQJSTiANKE07ZX-6-0EXAiSiOkk0tujUa4nkeYUxHQxjatIynPAtOkxDAY-3SJB1vgWPWG-gjNLqec32xRJ5VKIGpt93a7E_qClE8EiEFplADbg1hCkSLCkH1maawuTga084xh7B5mkEw4gxgdr" />
+        </div>
+      </div>
+      <a class="inline-block bg-primary hover:bg-primary-dark text-white font-display font-bold text-sm uppercase tracking-widest px-8 py-4 shadow-lg transition transform hover:-translate-y-1"
+        href="#">
+        See What Tools I Use
+      </a>
+    </div>
+  </section>
+  <section class="relative city-bg-overlay py-24 text-center px-4">
+    <div class="relative z-10 container mx-auto max-w-3xl">
+      <h2 class="font-display font-bold text-2xl md:text-4xl text-white mb-10 leading-snug shadow-sm">
+        I pride myself on changing lives for my mentees. Let’s scale your business and turn you into the operator you’re
+        meant to be
+      </h2>
+      <a class="inline-block bg-white hover:bg-gray-100 text-gray-900 font-display font-bold text-sm uppercase tracking-widest px-10 py-4 shadow-lg transition transform hover:-translate-y-1"
+        href="#">
+        Learn From David
+      </a>
+    </div>
+  </section>
+  <section class="py-20 bg-background-light dark:bg-background-dark relative">
+    <div class="absolute inset-0 opacity-30 pointer-events-none overflow-hidden">
+      <div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+    </div>
+    <div class="container mx-auto px-4 max-w-4xl relative z-10">
+      <div class="text-center mb-12">
+        <p class="text-gray-700 dark:text-gray-300 mb-6 font-medium text-lg leading-relaxed max-w-2xl mx-auto">
+          I’m the host of the <a class="text-primary hover:underline italic font-bold" href="#">Deals &amp; Dollars</a>
+          Podcast. Every week I bring on some of the best investors and real estate professionals in the game who bring
+          you the information you need to gain real leverage in real estate... today!
+        </p>
+        <a class="inline-block bg-primary hover:bg-primary-dark text-white font-display font-bold text-xs uppercase tracking-widest px-6 py-3 shadow-md transition mb-12"
+          href="#">
+          All Episodes
+        </a>
+      </div>
+      <div
+        class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-2xl overflow-hidden border border-gray-100 dark:border-gray-700">
+        <div
+          class="p-6 md:p-8 border-b border-gray-100 dark:border-gray-700 flex flex-col md:flex-row gap-6 items-center md:items-start">
+          <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 rounded-lg overflow-hidden shadow-md relative group">
+            <img alt="Podcast Cover" class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM7zGXna2hROHaCPP-siTTI1iZawNEXaYLHI5086P4Vu8VUWW_F215QN_7uxQovuwmNKdqHuUvhwc_gIGaF6Swv3VseFvu0doZsQPWZwyKtOAvVhpbvosOJnWcwHh_1b0rkoS3HjrERoz5HnaLKGjiMAiN2DfytQAWenIibmrIaNJcANkjR_qkYLjM0No5xSW59Oer0XtVMUyzCRbd8mZAlT50e5rAn8LfmaplSbuQo4p53qiUkG4w2eIH6QaYG7_Rwq-m7cfYmAWI" />
+            <div
+              class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer">
+              <i class="fas fa-play text-white text-3xl"></i>
+            </div>
+          </div>
+          <div class="flex-grow w-full">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-display font-bold text-lg text-gray-900 dark:text-white leading-tight">Deals &amp; Real
+                Estate Investors and Entrepreneurs</h3>
+            </div>
+            <div class="h-12 w-full flex items-center gap-0.5 mb-4 opacity-40">
+              <div class="w-1 bg-gray-800 dark:bg-gray-200 h-4 rounded-full"></div>
+              <div class="w-1 bg-gray-800 dark:bg-gray-200 h-6 rounded-full"></div>
+              <div class="w-1 bg-gray-800 dark:bg-gray-200 h-3 rounded-full"></div>
+              <div class="w-1 bg-gray-800 dark:bg-gray-200 h-8 rounded-full"></div>
+              <div class="w-1 bg-gray-800 dark:bg-gray-200 h-5 rounded-full"></div>
+              <div class="w-1 bg-primary h-10 rounded-full"></div>
+              <div class="w-1 bg-primary h-7 rounded-full"></div>
+              <div class="w-1 bg-primary h-12 rounded-full"></div>
+              <div class="w-1 bg-gray-800 dark:bg-gray-200 h-6 rounded-full"></div>
+              <div class="w-1 bg-gray-800 dark:bg-gray-200 h-4 rounded-full"></div>
+              <div class="w-1 bg-gray-800 dark:bg-gray-200 h-2 rounded-full"></div>
+              <div class="w-1 bg-gray-300 dark:bg-gray-600 h-4 rounded-full flex-grow"></div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4">
+                <button
+                  class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary-dark transition shadow-lg">
+                  <i class="fas fa-play text-xl ml-1"></i>
+                </button>
+                <div class="flex gap-3 text-gray-500 dark:text-gray-400 text-xs font-semibold">
+                  <button class="hover:text-primary"><i class="fas fa-undo"></i> 15</button>
+                  <button class="hover:text-primary"><i class="fas fa-redo"></i> 30</button>
+                  <button class="hover:text-primary">1x</button>
+                </div>
+              </div>
+              <div class="text-xs text-gray-400 font-mono">
+                00:00:00 | 01:05:58
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="max-h-80 overflow-y-auto bg-gray-50 dark:bg-[#1a2332]">
+          <div
+            class="p-4 flex items-center gap-4 border-b border-gray-100 dark:border-gray-700 bg-white dark:bg-surface-dark border-l-4 border-l-primary">
+            <img alt="Thumb" class="w-10 h-10 rounded object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdQcuPgPBlSC2GeEzI8wOuamKnOcL__9B0BHfcVoNywi7G8TSNYIIRI9iK60TQhgSeWEPEhN60ZNvODy3J-CQvES3V5H6kF42pXNcYocJigKX0H0AomsHpWZfpzOqH2lMpiChNrl1ArbWdSVurE2fbQ1Pi8UNIphwg3b69J1ks8ksrcmON2chAja4zdESGT_VW5szYDHDxKETHcH30lmaQxi65wLqSeTwFMPaNx837TGNyxkQ9pABsNhMU72LwLTvHjYaGBhpC58kJ" />
+            <div class="flex-grow">
+              <h4 class="text-sm font-bold text-primary">How Pace Morby is TAKING OVER the Real Estate Industry</h4>
+            </div>
+            <span class="text-xs text-gray-400">1:05:58</span>
+          </div>
+          <div
+            class="p-4 flex items-center gap-4 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer transition">
+            <img alt="Thumb" class="w-10 h-10 rounded object-cover grayscale opacity-70"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUkpLqao4ZtEAsZlyrffGV6CPPEfROdtBujhArB05zaW5fggAFWMk44DAZ0yek5J8kYIB98ebpAYkFA_E-E8p8IY01QGSUlvoMEVdiCl60NHVwsXpYF1TfXP3clNwei9gUqlxS03Wz1xv6Pl2DDi0AwoWEzHxAabzVV_24WSeDgBIUQ-ygRPD_BZAxG2NzCT0dvBi5X5uKdu-575c9WUAEdbmpeeFHhZGiv-LP-tF6EHuI-jDvFytaV7Vyf_uETetIuA36X8rgaz-O" />
+            <div class="flex-grow">
+              <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300">The Good, Bad, and UGLY of +700
+                Wholesale Deals w/ Adam Devine</h4>
+            </div>
+            <span class="text-xs text-gray-400">42:36</span>
+          </div>
+          <div
+            class="p-4 flex items-center gap-4 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer transition">
+            <img alt="Thumb" class="w-10 h-10 rounded object-cover grayscale opacity-70"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuuBkXIocEYkyKJM7tSGE-EcMHjhMRFX3JapfSZzPvI5M922UkTHWuvNzAqnYBVS_MEmZAL0yDlPe-QnT6MkmPHiq6WxFRj3urxCyGc3n43715KWry0kHvlfdaRDSiOC6K2mIRwxwX3AAFmDJybJr9TdwOmbM8eK-Tk5i87RwQklBxGLSihPmaEi9gjo2LH0KXwh3XYfrirbPw8ruff3oipXZL_L_qhtt9BWYR1YBDGwkjtrVcdtdpZphSXd8v14jNHC7vZpDLz4Bh" />
+            <div class="flex-grow">
+              <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300">How to Build Wealth in Real Estate NOW!
+                w/ Eric Melnikoff</h4>
+            </div>
+            <span class="text-xs text-gray-400">37:20</span>
+          </div>
+          <div
+            class="p-4 flex items-center gap-4 border-b border-gray-100 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer transition">
+            <img alt="Thumb" class="w-10 h-10 rounded object-cover grayscale opacity-70"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJQc4Qa81ChBM2GN_XwW-WAkfjRBRo42t5uhp_tfjsiQ3N0adA0A98gNmZx1hd6mMJUYQzItP3WbbCxD8C3xxGyhvxlE-3FGzDFtU5AnK2qCIZOFuasDLN0p64x7ntQs1k8d8VTCu3BJqKlYXwYRwcs-kB04_hDFsGmULJemx4e2PCwNWVUTGCDZBMNbWIpKF53tEIOWKM_silT5lXGE47_br_KxpJ6AK3ede1kJbs89gIDtk9MytbWROZsT-cayLo3BNDvb5TFcwx" />
+            <div class="flex-grow">
+              <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300">How to Run a 90-Year-Long Building
+                Material Dynasty w/ TJ Shaheen</h4>
+            </div>
+            <span class="text-xs text-gray-400">40:53</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="relative city-bg-overlay py-20 text-center">
+    <div class="relative z-10 container mx-auto px-4">
+      <h2
+        class="font-display font-extrabold text-3xl md:text-5xl text-white mb-10 tracking-tight uppercase drop-shadow-lg">
+        Let’s Connect!
+      </h2>
+      <div class="flex justify-center flex-wrap gap-4 md:gap-6">
+        <a class="w-12 h-12 md:w-14 md:h-14 bg-white rounded-full flex items-center justify-center text-primary hover:text-white hover:bg-black transition duration-300 transform hover:scale-110 shadow-lg group"
+          href="#">
+          <i class="fab fa-youtube text-xl md:text-2xl group-hover:text-white"></i>
+        </a>
+        <a class="w-12 h-12 md:w-14 md:h-14 bg-white rounded-full flex items-center justify-center text-primary hover:text-white hover:bg-black transition duration-300 transform hover:scale-110 shadow-lg group"
+          href="#">
+          <i class="fab fa-instagram text-xl md:text-2xl group-hover:text-white"></i>
+        </a>
+        <a class="w-12 h-12 md:w-14 md:h-14 bg-white rounded-full flex items-center justify-center text-primary hover:text-white hover:bg-black transition duration-300 transform hover:scale-110 shadow-lg group"
+          href="#">
+          <i class="fab fa-facebook-f text-xl md:text-2xl group-hover:text-white"></i>
+        </a>
+        <a class="w-12 h-12 md:w-14 md:h-14 bg-white rounded-full flex items-center justify-center text-primary hover:text-white hover:bg-black transition duration-300 transform hover:scale-110 shadow-lg group"
+          href="#">
+          <i class="fab fa-linkedin-in text-xl md:text-2xl group-hover:text-white"></i>
+        </a>
+        <a class="w-12 h-12 md:w-14 md:h-14 bg-white rounded-full flex items-center justify-center text-primary hover:text-white hover:bg-black transition duration-300 transform hover:scale-110 shadow-lg group"
+          href="#">
+          <i class="fab fa-tiktok text-xl md:text-2xl group-hover:text-white"></i>
+        </a>
+      </div>
+      <div class="mt-16 text-white/60 text-xs font-light">
+        © 2023 David Choi. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
