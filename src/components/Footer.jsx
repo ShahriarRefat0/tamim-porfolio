@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-16 text-white/60 text-xs font-light">
-          © 2023 Shahrier Anjum Shakib. All rights reserved.
+          © 2025 Shahrier Anjum Shakib. All rights reserved.
         </div>
       </div>
     </footer>
