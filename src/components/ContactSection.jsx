@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import Button from './Button';
+import Swal from 'sweetalert2';
 
 const ContactSection = () => {
   const form = useRef();
@@ -13,18 +14,30 @@ const ContactSection = () => {
 
     // REPLACE THESE WITH YOUR ACTUAL EMAILJS CREDENTIALS
     // or set them up in a .env file
-    const SERVICE_ID = 'YOUR_SERVICE_ID';
-    const TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-    const PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+    const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+    const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then((result) => {
         console.log(result.text);
         setStatus('success');
         e.target.reset();
+        Swal.fire({
+          title: "Success!",
+          text: "Message sent successfully!",
+          icon: "success",
+          confirmButtonColor: "#3085d6",
+        });
       }, (error) => {
         console.log(error.text);
         setStatus('error');
+        Swal.fire({
+          title: "Error!",
+          text: "Failed to send message. Please try again.",
+          icon: "error",
+          confirmButtonColor: "#d33",
+        });
       });
   };
 

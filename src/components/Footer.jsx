@@ -1,13 +1,15 @@
 import React from 'react';
-import { FaYoutube, FaInstagram, FaFacebookF, FaLinkedinIn, FaTiktok } from 'react-icons/fa';
+import { FaYoutube, FaFacebookF, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+import { TbBrandFiverr, TbBrandUpwork } from 'react-icons/tb';
 
 const Footer = () => {
   const socials = [
-    { icon: FaYoutube, href: "#" },
-    { icon: FaInstagram, href: "#" },
-    { icon: FaFacebookF, href: "#" },
-    { icon: FaLinkedinIn, href: "#" },
-    { icon: FaTiktok, href: "#" },
+    { icon: FaYoutube, href: "https://www.youtube.com/@shahrieranjumshakib8418" },
+    { icon: FaWhatsapp, href: "https://wa.me/+8801962165254" },
+    { icon: FaFacebookF, href: "https://www.facebook.com/Shakibcrit" },
+    { icon: FaLinkedinIn, href: "https://www.linkedin.com/in/shahrier-anjum-shakib/" },
+    { icon: TbBrandFiverr, href: "https://www.fiverr.com/shahrieranjum/set-qualified-appointments-and-close-sales-for-your-business" },
+    { icon: TbBrandUpwork, href: "https://www.upwork.com/freelancers/~01eda5dfd474f42be3?mp_source=share" },
   ];
 
   return (
@@ -30,7 +32,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-16 text-white/60 text-xs font-light">
-          © 2023 David Choi. All rights reserved.
+          © 2023 Shahrier Anjum Shakib. All rights reserved.
         </div>
       </div>
     </footer>

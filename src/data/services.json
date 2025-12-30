@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "B2B & B2C Appointment Setting",
+    "description": "Qualified leads that show up",
+    "rating": 5.0,
+    "reviews": 12,
+    "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=300&h=200"
+  },
+  {
+    "id": 2,
+    "title": "Cold Calling & Lead Generation",
+    "description": "Strategic outreach that converts",
+    "rating": 5.0,
+    "reviews": 28,
+    "image": "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=300&h=200"
+  },
+  {
+    "id": 3,
+    "title": "Sales Closing",
+    "description": "Turn prospects into customers",
+    "rating": 5.0,
+    "reviews": 8,
+    "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=300&h=200"
+  },
+  {
+    "id": 4,
+    "title": "Customer Support",
+    "description": "Phone, Email, & Chat support",
+    "rating": 5.0,
+    "reviews": 15,
+    "image": "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&q=80&w=300&h=200"
+  },
+  {
+    "id": 5,
+    "title": "Virtual Assistance",
+    "description": "B2B & B2C both",
+    "rating": 5.0,
+    "reviews": 6,
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=300&h=200"
+  },
+  {
+    "id": 6,
+    "title": "Administrative support",
+    "description": "B2B & B2C both",
+    "rating": 5.0,
+    "reviews": 4,
+    "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=300&h=200"
+  },
+  {
+    "id": 7,
+    "title": "CRM & Project Management",
+    "description": "Organized data management systems",
+    "rating": 5.0,
+    "reviews": 9,
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=300&h=200"
+  },
+  {
+    "id": 7,
+    "title": "Project Management",
+    "description": "Internatinal salse and marketing project management",
+    "rating": 5.0,
+    "reviews": 9,
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=300&h=200"
+  }
+]
