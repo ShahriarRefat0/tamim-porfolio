@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaYoutube, FaFacebookF, FaLinkedinIn, FaTiktok, FaBars, FaTimes, FaWhatsapp } from 'react-icons/fa';
 import { MdDownload } from 'react-icons/md';
-import { TbBrandFiverr } from 'react-icons/tb';
+import { TbBrandFiverr, TbBrandUpwork } from 'react-icons/tb';
 
 const SOCIAL_LINKS = [
   { Icon: FaYoutube, href: "https://www.youtube.com/@shahrieranjumshakib8418" },
   { Icon: FaWhatsapp, href: "https://wa.me/+8801962165254" },
   { Icon: FaFacebookF, href: "https://www.facebook.com/Shakibcrit" },
   { Icon: FaLinkedinIn, href: "https://www.linkedin.com/in/shahrier-anjum-shakib/" },
-  { Icon: TbBrandFiverr, href: "https://www.fiverr.com/shahrieranjum/set-qualified-appointments-and-close-sales-for-your-business" }
+  { Icon: TbBrandFiverr, href: "https://www.fiverr.com/shahrieranjum/set-qualified-appointments-and-close-sales-for-your-business" },
+  { Icon: TbBrandUpwork, href: "https://www.upwork.com/freelancers/~01eda5dfd474f42be3?mp_source=share" }
 ];
 
 const Navbar = () => {
@@ -92,7 +93,15 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex items-center hidden lg:inline-block text-xs font-bold uppercase tracking-wider bg-black/20 hover:bg-black/30 px-4 py-2 rounded transition"
           >
-            <span className="flex items-center gap-2">Resume <MdDownload className="text-sm" /></span>
+            <span className="flex items-center gap-2">
+              Resume
+              <motion.span
+                animate={{ y: [0, 3, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              >
+                <MdDownload className="text-sm" />
+              </motion.span>
+            </span>
           </motion.a>
 
           {/* Mobile Menu Icon */}

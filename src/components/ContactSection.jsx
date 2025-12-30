@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import { FaPaperPlane } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import Button from './Button';
 import Swal from 'sweetalert2';
@@ -108,9 +109,19 @@ const ContactSection = () => {
               <button
                 type="submit"
                 disabled={status === 'sending'}
-                className="inline-block bg-primary hover:bg-primary-dark text-white font-display font-bold text-sm uppercase tracking-widest px-10 py-4 shadow-lg transition transform hover:-translate-y-1 disabled:opacity-70 disabled:cursor-not-allowed"
+                className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-display font-bold text-sm uppercase tracking-widest px-10 py-4 shadow-lg transition transform hover:-translate-y-1 disabled:opacity-70 disabled:cursor-not-allowed"
               >
-                {status === 'sending' ? 'Sending...' : 'Send Message'}
+                {status === 'sending' ? 'Sending...' : (
+                  <>
+                    Send Message
+                    <motion.span
+                      animate={{ x: [0, 5, 0] }}
+                      transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                    >
+                      <FaPaperPlane />
+                    </motion.span>
+                  </>
+                )}
               </button>
             </div>
 

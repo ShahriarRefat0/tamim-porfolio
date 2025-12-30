@@ -10,7 +10,7 @@ const MentorshipSection = () => {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="relative z-10 container mx-auto max-w-5xl text-left"
+        className="relative z-10 container mx-auto max-w-6xl text-left"
       >
         <h2 className="font-display font-bold text-2xl md:text-4xl text-white mb-10 leading-snug shadow-sm">
           I help businesses with product or service marketing, generate qualified leads, set appointments, provide customer support, and close sales through professional telemarketing and communications.

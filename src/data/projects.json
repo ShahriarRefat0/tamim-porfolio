@@ -248,6 +248,29 @@
     "link": "#"
   },
   {
+    "title": "Appointment Setting For Demo In The USA",
+    "date": "January 2025",
+    "description": "It was an appointment-setting campaign for a Software named Aesthetiksmed.",
+    "details": [
+      "Attend 200-300 calls a day.",
+      "Identify Business owners/managers who can attend a virtual meeting for a demo.",
+      "Inform them about our software and services.",
+      "Verify contact information.",
+      "Set an appointment with the manager."
+    ],
+    "priceRange": "$1000-$2500",
+    "duration": "6+ months",
+    "industry": "Beauty & Cosmetics +2",
+    "category": "Styling & Beauty",
+    "tags": [
+      "Styling & Beauty",
+      "Aesthetiksmed",
+      "B2B"
+    ],
+    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/5a7475f800b446469fc99869f80add62-1764818858357/Ci%2057.png",
+    "link": "#"
+  },
+  {
     "title": "Truck Dispatching in USA",
     "date": "October 2023",
     "description": "B2B service campaign for truck dispatching service. 1 Appointment a day. Identifying owner operators.",
@@ -267,6 +290,75 @@
       "B2B"
     ],
     "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/de455dcc16f9422f4e6dd8e9dad52d36-1763000386444/Driving%20dash%20logo.jpg",
+    "link": "#"
+  },
+  {
+    "title": "Order Taking Campaign In Canada",
+    "date": "April 2025",
+    "description": "It was an order-taking and sales campaign.",
+    "details": [
+      "Attend 100-200 calls a day.",
+      "Confirm customers' needs.",
+      "Inform them about the price per quantity.",
+      "Verify contact information.",
+      "Book the delivery for dispatching."
+    ],
+    "priceRange": "$200-$400",
+    "duration": "7-30 days",
+    "industry": "Smoke and Vape shop",
+    "category": "E-commerce Marketing",
+    "tags": [
+      "Smoke and Vape shop",
+      "E-commerce Marketing",
+      "Order Taking"
+    ],
+    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/708147cecdb64ea2a0c68c4b375da60b-1764820613662/images.jpeg",
+    "link": "#"
+  },
+  {
+    "title": "Sales Campaign In New Zealand",
+    "date": "November 2025",
+    "description": "It was a sales campaign for Exterier Cleaning Services.",
+    "details": [
+       "Attend 80-120 calls a day.",
+"Identify Residential/Commercial home owners/managers who can receive a cleaning service quote.",
+"Inform them about our services and prices.",
+"Verify contact information.",
+"Sending a quote for the job.",
+"Scheduling the day of the job."
+    ],
+    "priceRange": "$200-$400",
+    "duration": "7-30 days",
+    "industry": "Cleaning Services",
+    "category": "Cleaning Services",
+    "tags": [
+      "Cleaning Services",
+      "B2B"
+    ],
+    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/7d1b6e2d4fbaea9fff467adb1da2e264-1764821457886/images.png",
+    "link": "#"
+  },
+  {
+    "title": "Appointment Booking Campaign In UK",
+    "date": "June 2022",
+    "description": "It was an appointment-setting campaign for homeowners for letting services.",
+    "details": [
+     "Attend 200-300 calls a day.",
+     "Inform them about the company and services.",
+     "Inform them about the pricing.",
+     "Verify contact information.",
+     "Book an appointment with the manager."
+    ],
+    "priceRange": "$400-$600",
+    "duration": "1-3 months",
+    "industry": "Residential Real Estate +1",
+    "category": "Real Estate",
+    "tags": [
+      "Residential Real Estate +1",
+      "Real Estate",
+      "B2B"
+    ],
+    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/904ce12ade177ed5890cb7c9e2831d12-1764822234103/letting-agents.jpg",
     "link": "#"
   }
 ]

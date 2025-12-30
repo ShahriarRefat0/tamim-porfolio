@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaTimes } from 'react-icons/fa';
+import { FaAngleDoubleDown, FaAngleDoubleUp, FaTimes } from 'react-icons/fa';
 import projectsData from '../data/projects.json';
 
 const ProjectsSection = () => {
@@ -87,9 +87,29 @@ const ProjectsSection = () => {
         <div className="mt-12 text-center">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="inline-block font-display font-bold text-sm uppercase tracking-widest px-8 py-4 bg-primary hover:bg-primary-dark text-white rounded-md shadow-lg transition transform hover:-translate-y-1"
+            className="inline-flex items-center gap-2 font-display font-bold text-sm uppercase tracking-widest px-8 py-4 bg-primary hover:bg-primary-dark text-white rounded-md shadow-lg transition transform hover:-translate-y-1"
           >
-            {isExpanded ? 'Show Less' : 'View All Projects'}
+            {isExpanded ? (
+              <>
+                Show Less
+                <motion.span
+                  animate={{ y: [0, -4, 0] }}
+                  transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                >
+                  <FaAngleDoubleUp />
+                </motion.span>
+              </>
+            ) : (
+              <>
+                View All Projects
+                <motion.span
+                  animate={{ y: [0, 4, 0] }}
+                  transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                >
+                  <FaAngleDoubleDown />
+                </motion.span>
+              </>
+            )}
           </button>
         </div>
       </div>
