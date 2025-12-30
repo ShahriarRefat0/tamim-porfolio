@@ -49,18 +49,18 @@
   },
   {
     "id": 7,
-    "title": "CRM & Project Management",
+    "title": "CRM Management",
     "description": "Organized data management systems",
     "rating": 5.0,
     "reviews": 9,
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=300&h=200"
+    "image": "https://germius.com/img/blog/blog31.jpg"
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Project Management",
     "description": "Internatinal salse and marketing project management",
     "rating": 5.0,
-    "reviews": 9,
+    "reviews": 8,
     "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=300&h=200"
   }
 ]
